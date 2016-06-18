@@ -1,0 +1,33 @@
+Database Tables:
+
+1)Users:
+user_id
+username
+password
+firstName
+lastName
+email
+phoneNum
+role_id (Foreign key of id field from roles table)
+
+2)Roles:
+id
+role
+
+3)Doctor
+##doctor_id(not sure for this field)
+user_id(foreign key of user_id from user table)
+clinic1address
+clinic1phone
+clinic2address
+clinic2phone
+type(mbbs/md/specialist)
+
+4)Prescription:
+id
+dr_id(foreign key of doctor_id or user_id from doctor table)
+desease
+treatment
+medicine
+comment
+patient_id
